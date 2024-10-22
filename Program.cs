@@ -13,18 +13,12 @@ namespace lab7
             // Читання бінарного файлу
             List<EmployeeDocument> employees = ReadEmployeeDocuments(filePath);
 
-            // Виведення даних перед сортуванням
-            Console.WriteLine("Дані перед сортуванням:");
-            foreach (var emp in employees)
-            {
-                Console.WriteLine(emp.ToString());
-            }
 
             // Сортування колекції
             employees.Sort();
 
             // Виведення даних після сортування
-            Console.WriteLine("\nДані після сортування:");
+            Console.WriteLine("\nВідсортований список працівників:");
             foreach (var emp in employees)
             {
                 Console.WriteLine(emp.ToString());
